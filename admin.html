@@ -37,8 +37,8 @@ button{border:0;border-radius:10px;padding:12px 16px;font-weight:bold;cursor:poi
 </main>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
-const URL="https://gwyepuukycpiinpdwfeb.supabase.co", KEY="sb_publishable_DKjZo7vg8ohFeeTpicXUhA_eUxYvsoE";
-const sb=URL.startsWith("COLOQUE")?null:supabase.createClient(URL,KEY);
+const URL="https://gwyepuukycpiinpdwfeb.supabase.co"; KEY="sb_publishable_DKjZo7vg8ohFeeTpicXUhA_eUxYvsoE";
+const sb=supabase.createClient(URL,KEY);
 let list=[];
 function msg(t){document.getElementById("loginMsg").textContent=t}
 async function login(){
